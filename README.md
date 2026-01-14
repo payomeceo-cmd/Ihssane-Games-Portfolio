@@ -7,7 +7,7 @@ This is a simple storefront (GitHub Pages) that lists published mobile games and
 2. Upload these files to the root of the repo
 3. Go to **Settings → Pages**
 4. Set **Branch: main** and **Folder: /(root)**
-
+ 
 Your site will be available at:
 `https://YOUR_USERNAME.github.io`
 
