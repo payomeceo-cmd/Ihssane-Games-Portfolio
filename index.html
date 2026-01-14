@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mobile Games Portfolio By Ihssane</title>
+  <meta name="description" content="Mobile Games Portfolio By Ihssane – official links to published mobile games.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card: #12141c;
+      --text: #e8eaf0;
+      --muted: #aeb3c2;
+      --border: rgba(255,255,255,.08);
+      --accent: #6ee7ff;
+      --accent2:#9b87ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 700px at 15% 10%, rgba(110,231,255,.18), transparent 60%),
+                  radial-gradient(900px 600px at 85% 20%, rgba(155,135,255,.14), transparent 55%),
+                  var(--bg);
+      line-height: 1.45;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 16px 48px;
+    }
+    header {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding: 18px;
+      border: 1px solid var(--border);
+      background: rgba(18,20,28,.75);
+      border-radius: 18px;
+      backdrop-filter: blur(10px);
+    }
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      flex: 0 0 auto;
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: .2px;
+    }
+    .sub {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .sub a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(255,255,255,.25);
+    }
+    .sub a:hover { border-bottom-color: rgba(255,255,255,.6); }
+    .section-title {
+      margin: 26px 0 12px;
+      font-size: 16px;
+      color: var(--muted);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 14px;
+    }
+    @media (min-width: 720px) {
+      .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    .card {
+      border: 1px solid var(--border);
+      background: rgba(18,20,28,.72);
+      border-radius: 18px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+    .card-media {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, rgba(110,231,255,.10), rgba(155,135,255,.06));
+      border-bottom: 1px solid var(--border);
+    }
+    .card-media img {
+      width: 92px;
+      height: 92px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.12);
+    }
+    .card-body {
+      padding: 14px 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1 1 auto;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: .2px;
+      min-height: 40px;
+    }
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: auto;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 13px;
+      background: rgba(255,255,255,.03);
+    }
+    .btn:hover {
+      border-color: rgba(255,255,255,.18);
+      background: rgba(255,255,255,.05);
+    }
+    .btn.primary {
+      border-color: rgba(110,231,255,.35);
+      background: linear-gradient(135deg, rgba(110,231,255,.20), rgba(155,135,255,.16));
+    }
+    footer {
+      margin-top: 26px;
+      padding: 14px 2px 0;
+      color: var(--muted);
+      font-size: 13px;
+      display:flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    footer a { color: var(--text); text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,.25); }
+    footer a:hover { border-bottom-color: rgba(255,255,255,.6); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">
+        <img src="assets/avatar-256.webp" alt="Profile photo">
+      </div>
+      <div>
+        <h1>Mobile Games Portfolio By Ihssane</h1>
+        <div class="sub">
+          Contact: <a href="mailto:payome.ceo@gmail.com">payome.ceo@gmail.com</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="section-title">Published Games</div>
+    <section class="grid">
+      
+      <article class="card">
+        <div class="card-media">
+          <img src="https://m.media-amazon.com/images/I/81y4jcoJLZL.png" alt="Escape Evil Running Head icon" loading="lazy" referrerpolicy="no-referrer">
+        </div>
+        <div class="card-body">
+          <h3>Escape Evil Running Head</h3>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.amazon.com/FereraWolrd-Games-Escape-Evil-Running/dp/B0DLHNV2VR/ref=sr_1_1?crid=3K7WB5ZMS6KUB&dib=eyJ2IjoiMSJ9.UDQZBEDo2CNUNdjCVshQfQ.FJ1HrAK1d9DAYZrGNzrPlPfY32Bv2TZN4IIeTuqndP0&dib_tag=se&keywords=escape+evil+running+head+app&qid=1768410651&sprefix=%2Caps%2C311&sr=8-1" target="_blank" rel="noopener">Download on Amazon</a>
+            <a class="btn" href="https://www.amazon.com/s?i=mobile-apps&rh=p_4%3AFereraWolrd%2BGames&search-type=ss" target="_blank" rel="noopener">Publisher Store</a>
+          </div>
+        </div>
+      </article>
+    
+
+      <article class="card">
+        <div class="card-media">
+          <img src="https://m.media-amazon.com/images/I/71XolbEYTfL.png" alt="Zombie Faction Playground icon" loading="lazy" referrerpolicy="no-referrer">
+        </div>
+        <div class="card-body">
+          <h3>Zombie Faction Playground</h3>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.amazon.com/Torrefa-Games-Zombie-Faction-Playground/dp/B0D914VHWB/ref=sr_1_1?crid=20DXZ53EX26V4&dib=eyJ2IjoiMSJ9.yaW5zFgFRFwT5R3w8yM9qBnr4Yqif4thMtwscxi_oUk.GohJgKwNu1ETXu2kbMsAH414qXL514XGlAXgFk6HC9I&dib_tag=se&keywords=zombie+faction+playground+a%5B%5B&qid=1768410748&sprefix=%2Caps%2C213&sr=8-1" target="_blank" rel="noopener">Download on Amazon</a>
+            <a class="btn" href="https://www.amazon.com/s?i=mobile-apps&rh=p_4%3ATorrefa%2BGames&search-type=ss" target="_blank" rel="noopener">Publisher Store</a>
+          </div>
+        </div>
+      </article>
+    
+
+      <article class="card">
+        <div class="card-media">
+          <img src="https://m.media-amazon.com/images/I/81cOCRLq2oL.png" alt="Nextbots In Playground SANDBOXs icon" loading="lazy" referrerpolicy="no-referrer">
+        </div>
+        <div class="card-body">
+          <h3>Nextbots In Playground SANDBOXs</h3>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.amazon.com/ZazzMade-Games-Nextbots-Playground-SANDBOXs/dp/B0DWXZMSNH/ref=sr_1_1?crid=2XYWJIVTJTJRI&dib=eyJ2IjoiMSJ9.9qWopbFR8MRA1MsIbMLN4-KNl_4OFodd2XqUJmOaP7w.XxBQX6Q9qozH9IIatagvH2onR60Ek0qRrGizml8RfNk&dib_tag=se&keywords=nextbots+in+playground+sandboxes+app&qid=1768410811&sprefix=%2Caps%2C218&sr=8-1" target="_blank" rel="noopener">Download on Amazon</a>
+            <a class="btn" href="https://www.amazon.com/s?i=mobile-apps&rh=p_4%3AZazzMade%2BGames&search-type=ss" target="_blank" rel="noopener">Publisher Store</a>
+          </div>
+        </div>
+      </article>
+    
+    </section>
+
+    <footer>
+      <div>© Mobile Games Portfolio By Ihssane</div>
+      <div><a href="mailto:payome.ceo@gmail.com">Email</a></div>
+    </footer>
+  </div>
+</body>
+</html>
